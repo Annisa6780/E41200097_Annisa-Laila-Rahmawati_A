@@ -5,7 +5,7 @@
  */
 package tugas;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 /**
  *
@@ -15,15 +15,24 @@ public class Tugas1 {
    public static void main(String[] args) {
         // TODO code application logic here
         
-        String awal = JOptionPane.showInputDialog("Masukkan Batas Nilai Awal) = ");
-        String akhir = JOptionPane.showInputDialog("Masukkan Batas Nilai Akhir) = ");
-        int genap = Integer.parseInt(awal);
-        int genap1 = Integer.parseInt(akhir);
+        Scanner masuk = new Scanner(System.in);
         
-        for(int i=1; i<=10;i++)
-            if (i % 2 == 0){
+        System.out.println("  Menampilkan bilangan genap dari kecil ke besar");
+        System.out.println("----------------------------------------------------------");
+        
+        System.out.print ("Masukkan nilai awal = ");
+       int awal = masuk.nextInt();
+        System.out.print("Masukkan nilai akhir = ");
+       int akhir = masuk.nextInt();
+        System.out.println(" ");
+        
+        System.out.println("Bilangan genap");
+        for (int i=awal; i<=akhir; i++) {
+            if (i%2 == 0) {
                 System.out.print(i + " ");
             }
+        }
+        System.out.println(" ");
     }
   
 }
