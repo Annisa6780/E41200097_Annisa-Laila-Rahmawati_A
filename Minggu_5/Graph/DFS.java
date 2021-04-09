@@ -10,7 +10,7 @@ import java.util.*;
  * @author Annisa Laila
  */
 
-//kelas utk informasi penerbangan.
+
 public class DFS {
     int V;    
     LinkedList<Integer> adjList[]; 
